@@ -4,14 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+
 
     <ProgressBar
         android:id="@+id/progressID"
-        android:layout_margin="20dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+        android:layout_margin="20dp" />
+
+    <ProgressBar
+        android:id="@+id/progressRoundID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_gravity="center_horizontal"/>
 
 
 </LinearLayout>

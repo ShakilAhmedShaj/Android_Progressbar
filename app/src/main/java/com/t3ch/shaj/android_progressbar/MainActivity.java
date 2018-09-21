@@ -7,6 +7,7 @@ import android.widget.ProgressBar;
 public class MainActivity extends AppCompatActivity {
 
     private ProgressBar progressBar;
+    private ProgressBar progressBar2;
     int progress;
 
     @Override
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         progressBar = findViewById(R.id.progressID);
+        progressBar2 = findViewById(R.id.progressRoundID);
 
         Thread thread = new Thread(new Runnable() {
             @Override
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
             try {
                 Thread.sleep(1000);
                 progressBar.setProgress(progress);
+                progressBar2.setProgress(progress);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
